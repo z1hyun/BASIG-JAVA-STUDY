@@ -18,12 +18,23 @@ public class Person {
 	 * 프로그래머가 디폴트 생성자를 직접 만드는 경우에는 필요에 따라 직접 코드를 구현한다.
 	 *
 	 */
-	// public Person() {} <- 이게 자바컴파일러가 자동으로 제공하는 디폴트 생성자
+	public Person() {
+		
+	} //<- 이게 자바컴파일러가 자동으로 제공하는 디폴트 생성자
 
 	/*생성자를 만들어보자*/
-	
-	Public Person(String pname) {
-		name = pname;
+
+	public Person(String pname) {
+		name =  pname;
+		/*사람 이름을 매개변수로 입력받아서 Person 클래스를 생성하는 생성자*/
 	}
-	/*사람 이름을 매개변수로 입력받아서 Person 클래스를 생성하는 생성자*/
+	
+	public Person(String pname, float pheight, float pweight) {  
+		name = pname;
+		height = pheight;
+		weight = pweight;
+		/*이름 , 키, 몸무게를 매개변수로 입력받는 생성자*/
+	}
+	
+
 }
